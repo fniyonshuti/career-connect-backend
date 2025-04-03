@@ -12,7 +12,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: "https://career-connect-frontend-k9z7.onrender.com", credentials: true }));
 
 // Routes
 app.get('/', (req, res)=> {
