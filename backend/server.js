@@ -15,6 +15,11 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
+app.get('/', (req, res)=> {
+  res.json({
+    message: "Welcome to Career Network"
+  })
+})
 app.use("/api/users", userRoutes);
 app.use("/api/jobs", jobRoutes);
 app.use("/api/applications", applicationRoutes);
