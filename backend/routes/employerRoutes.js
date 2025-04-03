@@ -1,7 +1,6 @@
 import express from 'express';
 import Job from '../models/Job.js';
-import { verifyToken } from '../middleware/authemployer.js';
-import { isEmployer } from '../middleware/authemployer.js';
+import {verifyToken, isEmployer} from "../Middleware/authemployer.js"
 
 const router = express.Router();
 
